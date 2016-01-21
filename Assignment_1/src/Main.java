@@ -93,15 +93,15 @@ public class Main extends JFrame {
 		contentPane.setLayout(null);
 		
 		JScrollPane scrollPane = new JScrollPane();
-		scrollPane.setBounds(0, 6, 109, 256);
+		scrollPane.setBounds(6, 6, 99, 244);
 		contentPane.add(scrollPane);
 		
-		JTextArea txtrHej = new JTextArea();
+		JTextPane txtrHej = new JTextPane();
 		txtrHej.setFont(new Font("Helvetica", Font.PLAIN, 13));
-		txtrHej.setText("Harry Potter\nHermione Granger\nRonald Weasley\nRemus Lupin\nProfessor Dumbledore\nProfessor Snape\nGandalf the Gray \nGollum \nBilbo Baggins\nFrodo Baggins\nSmaug the Dragon\nKhal Drogo\nHilmer\nKato\nKhaleesi\nJamie Lannister\nKapten Morgan\nSeth Cohan\nSummer\nRyan Gåsling \nJean Paul\nDexter Morgan\nRachel Green\nRoss Geller\nPhoebe Buffay\nMonica Geller\nChandler Bing\nJoey Tribbiani\nJanice Joplin\n\n\n\n");
+		txtrHej.setText("Harry Potter\nHermione Granger\nRonald Weasley\nRemus Lupin\nProfessor Dumbledore\nProfessor Snape\nGandalf the Gray \nGollum \nBilbo Baggins\nFrodo Baggins\nSmaug the Dragon\nKhal Drogo\nHilmer\nKato\nKhaleesi\nJamie Lannister\nKapten Morgan\nSeth Cohan\nSummer\nRyan Gåsling \nJean Paul\nDexter Morgan\nRachel Green\nRoss Geller\nPhoebe Buffay\nMonica Geller\nChandler Bing\nJoey Tribbiani\nJanice Joplin\nKhal Drogo\n\n\n");
 		scrollPane.setViewportView(txtrHej);
 		
-		JTextArea txtrNamn = new JTextArea();
+		JTextPane txtrNamn = new JTextPane();
 		txtrNamn.setForeground(Color.WHITE);
 		txtrNamn.setBackground(Color.BLACK);
 		txtrNamn.setFont(new Font("Helvetica", Font.PLAIN, 13));
@@ -109,7 +109,7 @@ public class Main extends JFrame {
 		txtrNamn.setBounds(284, 22, 160, 25);
 		contentPane.add(txtrNamn);
 		
-		JTextArea txtrPersonnummer = new JTextArea();
+		JTextPane txtrPersonnummer = new JTextPane();
 		txtrPersonnummer.setForeground(Color.WHITE);
 		txtrPersonnummer.setBackground(Color.BLACK);
 		txtrPersonnummer.setFont(new Font("Helvetica", Font.PLAIN, 13));
@@ -153,7 +153,7 @@ public class Main extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("New label");
 		lblNewLabel.setIcon(new ImageIcon("/Users/johannajohnson/Desktop/programmering II/KD405A_Johanna_J/Assignment_1/src/Drogo_HBO.jpg"));
-		lblNewLabel.setBounds(-27, -61, 710, 657);
+		lblNewLabel.setBounds(-27, -37, 710, 657);
 		contentPane.add(lblNewLabel);
 	}
 }

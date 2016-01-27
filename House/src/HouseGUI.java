@@ -1,5 +1,7 @@
 import java.awt.EventQueue;
+
 import java.util.ArrayList;
+import java.util.Random;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -75,7 +77,18 @@ public class HouseGUI extends JFrame {
 			textArea.append("ett hus som byggdes " + myHouse[i].getYear() + " är " + myHouse[i].getSize() + " kvadratmeter stort" + "\n");
 	
 		}
+		Random rand = new Random();
 		
-		
-	}
+		for(int i = 0; i < 100; i++){
+			
+			int size = rand.nextInt(990) + 10;
+			int yearBuilt = rand.nextInt(215) + 1800;
+			
+			houseArmy.add(new House(yearBuilt, size));
+		}
+		for(House house: houseArmy){
+			textArea.append("Ett hus som byggdes " + house.getYear() + "är " + house.getSize() + "kvadratmeter stort" + "\n");
+		}
+		}
 }
+	

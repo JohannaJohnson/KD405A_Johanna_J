@@ -1,0 +1,45 @@
+A. Konstruktor
+En metod som körs när ett objekt skapas, ex toaster ska ha värmenivå 5 och vara avstängd. 
+Ex. Speaker speaker = new Speaker (true);
+Ex. public Klassnamn ()
+
+SVAR: public House(int yearBuilt,int size){
+
+B. Instansvariabler
+Lagrar data för det aktuella objektet. Ofta används this innan för att visa att det gäller just detta objekt. Instansvariablerna 
+är unika för just ditt objekt.
+Ex. this.temp
+Ex. private int timeLeft;
+Ex. private int numberOfBreads;
+
+SVAR:  private int yearBuilt;
+ private int size;
+ private final int minSize = 10;
+
+
+C. Instansmetoder
+Kan finnas flera i varje klass, och definerar vad man kan göra med det aktuella objektet. Har returtyp (ex. void, int)
+Man når instansmetoder med . (heter syftningsoperator), detta fungerar endast om de är publika. 
+
+SVAR:  public int getYearBuilt(){
+ //diverse kod
+ }
+ public int getSize(){
+ //diverse kod
+
+
+D. Vad innebär det att minSize är deklarerad final?
+Att klassen är slutgiltig och att det inte går att ärva från den.
+
+SVAR: private final int minSize = 10;
+
+
+
+ E. Vad innebär det att vissa koddelar är deklarerade private och andra public?
+ Är den private kan den endast nås innifrån klassen, är den public kan den nås från vart som helst-ish.
+ 
+ SVAR:public class House
+
+
+
+

@@ -34,7 +34,7 @@ public class bikeGUI extends JFrame {
 	}
 
 	/**
-	 * Create the frame.
+	  Create the frame.
 	 */
 	public bikeGUI() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -49,10 +49,14 @@ public class bikeGUI extends JFrame {
 		contentPane.add(textPrice);
 		textPrice.setColumns(10);
 		
-		JButton btnNewButton = new JButton("New button");
+		JButton btnNewButton = new JButton("Add bike");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				
+				bikeStore.addBike(textColor.getText(), Integer.parseInt(textSize.getText()), Integer.parseInt(textPrice.getText()));
+				allBikesTextArea.setText(bikeStore.getAllBikes());
+				textColor.setText(" ");
+				textSize.setText(" ");
+				textPrice.setText(" ");
 			}
 		});
 		btnNewButton.setBounds(298, 201, 117, 29);

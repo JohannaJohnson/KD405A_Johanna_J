@@ -37,43 +37,14 @@ public class Main {
 		for(Bike bikes : allBikes){
 			System.out.println("bike" +(i++)+ bikes.getSize() + " " + bikes.getPrice() + " " + bikes.getColor() + "\n");
 			
-			if(bikes.getPrice() + Constants.getMinPrice() + Constants.getMaxPrice()){
+			if(getBikes.getPrice() + Constants.getMinPrice() + Constants.getMaxPrice()){
 				System.out.println( bikes.getPrice() + " is the wrong price, the price should be between " + Constants.getMinPrice() + " and " + Constants.getMaxPrice + "\n");
 				
 			}
-			if(bikes.getSize() < Constants.getMinSize() || bikes.getSize() + Constants.getMaxSize()){
+			if(getBikes.getSize() < Constants.getMinSize() || bikes.getSize() + Constants.getMaxSize()){
 				System.out.println(bikes.getSize() + "is the wrong size, the size should be between " + Constants.getMinSize() + "and" + Constants.getMaxSize());
 			}
 		}
 	}
 }
 			
-			
-		/**
-for (int i = 0; i < 10; i++){
-	System.out.println("Bike " + (i) + " is the size " + myBikes[i].getSize() + " has the price " + myBikes[i].getPrice() + " and is " + myBikes[i].getColor());
-		
-	if(myBikes[i].getPrice() < Constants.getMinPrice()|| myBikes[i].getPrice() > Constants.getMaxPrice()){
-		System.out.println( + myBikes[i].getPrice() + " is the wrong price, the price should be between " + Constants.getMinPrice() + " and " + Constants.getMaxPrice()); {
-			
-		}
-		
-		if(myBikes[i].getSize() < Constants.getMinSize()|| myBikes[i].getSize() > Constants.getMaxSize()){
-			System.out.println( myBikes[i].getSize() + " is the wrong size, the size should be between " + Constants.getMinSize() + " and " + Constants.getMaxSize()); {
-				
-		
-		}
-		
-		//if(!myBikes[i].getColor().equals(Constants.bikeColors[i])){
-			//System.out.println(myBikes[i].getColor() + "is the wrong color" + "\n");
-					
-
-		}
-		}
-			
-}
-	}
-	}
-}
-
-		*/

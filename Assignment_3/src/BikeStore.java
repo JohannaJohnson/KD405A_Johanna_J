@@ -3,7 +3,7 @@ import java.util.ArrayList;
 public class BikeStore {
 	
 	
-	/** Returns info if all bikes if all bikes are String */
+	/** Returns info if all bikes are String */
 	
 	private ArrayList<Bike> allBikes = new ArrayList<Bike>();
 	public String getAllBikes1(){
@@ -21,7 +21,7 @@ public class BikeStore {
 
 	
 	public BikeStore(String allBikes) {
-		this.allBikes1 = allBikes; 
+		this.allBikes = allBikes; 
 		
 	}
 

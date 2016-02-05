@@ -7,8 +7,7 @@ public class Constants {
 	public static final int MAX_SIZE = 28;
 	public static final int MIN_PRICE = 0;
 	public static final int MAX_PRICE = 30000;
-	
-	public static final String[] bikeColors = new String[] {"green", "red", "blue", "pink", "black", "yellow"};
+	public static final String[] COLORS = new String[] {"green", "red", "blue", "pink", "black", "yellow"};
 	
 
 	
@@ -26,7 +25,7 @@ public class Constants {
 	}
 	
 	public static String[] getBikeColors () {
-		return bikeColors;
+		return COLORS;
 	}
 	
 public Constants(){
@@ -35,7 +34,7 @@ public Constants(){
 public static void main(String[] args){
 	
 	for (int i =0; i< 9; i++){
-		System.out.println(bikeColors[i]);
+		System.out.println(COLORS[i]);
 	}
 }
 }

@@ -16,6 +16,9 @@ public class bikeGUI extends JFrame {
 	private JTextField textPrice;
 	private JTextField textSize;
 	private JTextField textColor;
+	private JTextField PRICE;
+	private JTextField SIZE;
+	private JTextField COLOR;
 
 	/**
 	 * Launch the application.
@@ -45,7 +48,7 @@ public class bikeGUI extends JFrame {
 		contentPane.setLayout(null);
 		
 		textPrice = new JTextField();
-		textPrice.setBounds(281, 48, 146, 26);
+		textPrice.setBounds(351, 46, 76, 26);
 		contentPane.add(textPrice);
 		textPrice.setColumns(10);
 		
@@ -53,7 +56,7 @@ public class bikeGUI extends JFrame {
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				bikeStore.addBike(textColor.getText(), Integer.parseInt(textSize.getText()), Integer.parseInt(textPrice.getText()));
-				allBikesTextArea.setText(bikeStore.getAllBikes());
+				textArea.setText(bikeStore.getAllBikes());
 				textColor.setText(" ");
 				textSize.setText(" ");
 				textPrice.setText(" ");
@@ -63,17 +66,35 @@ public class bikeGUI extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		textSize = new JTextField();
-		textSize.setBounds(281, 96, 146, 26);
+		textSize.setBounds(351, 96, 76, 26);
 		contentPane.add(textSize);
 		textSize.setColumns(10);
 		
 		textColor = new JTextField();
-		textColor.setBounds(281, 150, 146, 26);
+		textColor.setBounds(351, 150, 76, 26);
 		contentPane.add(textColor);
 		textColor.setColumns(10);
 		
 		JTextArea textArea = new JTextArea();
 		textArea.setBounds(21, 31, 231, 225);
 		contentPane.add(textArea);
+		
+		PRICE = new JTextField();
+		PRICE.setText("price");
+		PRICE.setBounds(264, 46, 75, 26);
+		contentPane.add(PRICE);
+		PRICE.setColumns(10);
+		
+		SIZE = new JTextField();
+		SIZE.setText("size");
+		SIZE.setBounds(261, 96, 76, 26);
+		contentPane.add(SIZE);
+		SIZE.setColumns(10);
+		
+		COLOR = new JTextField();
+		COLOR.setText("color");
+		COLOR.setBounds(264, 150, 75, 26);
+		contentPane.add(COLOR);
+		COLOR.setColumns(10);
 	}
 }

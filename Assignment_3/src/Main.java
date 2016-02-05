@@ -32,18 +32,18 @@ public class Main {
 		Bike Bike9 = new Bike("pink", 17, 1357);
 		allBikes.add(Bike9);
 		
-		
+		int index = 0;
 		int i = 0;
 		for(Bike bikes : allBikes){
-			System.out.println("bike" +(i++)+ bikes.getSize() + " " + bikes.getPrice() + " " + bikes.getColor() + "\n");
+			System.out.println("plats nummer" + (index++) + "bike " +(i++)+ bikes.getSize() + " " + bikes.getPrice() + " " + bikes.getColor() + "\n");
 			
-			if(getBikes.getPrice() + Constants.getMinPrice() + Constants.getMaxPrice()){
+			/** if(getBikes.getPrice() + Constants.getMinPrice() + Constants.getMaxPrice()){
 				System.out.println( bikes.getPrice() + " is the wrong price, the price should be between " + Constants.getMinPrice() + " and " + Constants.getMaxPrice + "\n");
 				
 			}
 			if(getBikes.getSize() < Constants.getMinSize() || bikes.getSize() + Constants.getMaxSize()){
 				System.out.println(bikes.getSize() + "is the wrong size, the size should be between " + Constants.getMinSize() + "and" + Constants.getMaxSize());
-			}
+			}*/
 		}
 	}
 }

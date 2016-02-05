@@ -19,6 +19,7 @@ public class bikeGUI extends JFrame {
 	private JTextField PRICE;
 	private JTextField SIZE;
 	private JTextField COLOR;
+	private BikeStore bikeStore;
 
 	/**
 	 * Launch the application.
@@ -40,6 +41,7 @@ public class bikeGUI extends JFrame {
 	  Create the frame.
 	 */
 	public bikeGUI() {
+		bikeStore = new BikeStore();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
@@ -51,19 +53,6 @@ public class bikeGUI extends JFrame {
 		textPrice.setBounds(351, 46, 76, 26);
 		contentPane.add(textPrice);
 		textPrice.setColumns(10);
-		
-		JButton btnNewButton = new JButton("Add bike");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				bikeStore.addBike(textColor.getText(), Integer.parseInt(textSize.getText()), Integer.parseInt(textPrice.getText()));
-				textArea.setText(bikeStore.getAllBikes());
-				textColor.setText(" ");
-				textSize.setText(" ");
-				textPrice.setText(" ");
-			}
-		});
-		btnNewButton.setBounds(298, 201, 117, 29);
-		contentPane.add(btnNewButton);
 		
 		textSize = new JTextField();
 		textSize.setBounds(351, 96, 76, 26);
@@ -96,5 +85,28 @@ public class bikeGUI extends JFrame {
 		COLOR.setBounds(264, 150, 75, 26);
 		contentPane.add(COLOR);
 		COLOR.setColumns(10);
+		
+		JButton btnNewButton = new JButton("Add bike");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				/**bikeStore.addBike(textColor.getText(), Integer.parseInt(textSize.getText()), Integer.parseInt(textPrice.getText()));
+				textArea.setText(bikeStore.getAllBikes());
+				textColor.setText(" ");
+				textSize.setText(" ");
+				textPrice.setText(" "); */
+				
+				String bikeColor = textColor.getText();
+				int bikeSize = Integer.parseInt(textSize.getText());
+				int bikePrice = Integer.parseInt(textPrice.getText());
+				
+				bikeStore.addBike(bikeColor, bikeSize, bikePrice);
+				
+				textArea.setText(bikeStore.getAllBikes());
+			}
+		});
+		btnNewButton.setBounds(298, 201, 117, 29);
+		contentPane.add(btnNewButton);
+		
+		
 	}
 }

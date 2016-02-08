@@ -10,17 +10,27 @@ public class Bike {
 	private int size;
 	
 	public Bike(int size, String color, int price) {
-	/**	this.size = size;
+		this.size = size;
 		this.color = color;
-		this.price = 0; */
+		this.price = 0; 
 		
+		this.color = "colorless";
+		for(String s : Constants.COLORS){
+			if (s.toLowerCase().equals(color.toLowerCase())){
+				this.color = color;
 		
-		boolean hej = false;
+		/**boolean hej = false;
 		for(int i = 0; i < Constants.COLORS.length; i++){
 			if(Constants.COLORS[i].equals(color)){
 			hej = true;
-		}
-		}
+			*/
+	}
+		
+			
+		}	
+	
+	/**
+			
 	
 	
 	if(hej == true){
@@ -32,13 +42,15 @@ public class Bike {
 	}
 		
 	
-	
+	*/
 	}
 		/**
 		 boolean correctColor = false;
 		if (size < Constants.MIN_SIZE || size > Constants.MAX_SIZE) {
 		throw new IllegalArgumentException("The size must be between " + Constants.MIN_SIZE + " and " + Constants.MAX_SIZE); 
 		  }
+		  
+		  
 		for (int i = 0; i < Constants.COLORS.length; i ++) {
 		if (Constants.COLORS[i].equalsIgnoreCase(color)){
 		   correctColor = true;
@@ -66,7 +78,6 @@ public class Bike {
 			this.size = size;
 			this.price = price;
 			
-	
 	}
 
 
@@ -87,6 +98,7 @@ public class Bike {
 		return this.price;
 	}
 	public void setPrice(int price) {
+		
 		this.price = price;
 	}
 

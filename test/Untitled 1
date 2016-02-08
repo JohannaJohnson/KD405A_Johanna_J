@@ -1,0 +1,17 @@
+<< abstract >> Tower
+
++Tower(panel: JPanel)					 //konstruktor
+
+-label: JLable							//lokalt
+
++ setPostition(x:int, y:int):Void
++ setVisible(Visible: boolean): void
+abstract makeSound();                   // måste implementeras i subklassen
+
+										// för exempelvis hay används en JLable
+										
+										
+										
+// new-package	
+
+									

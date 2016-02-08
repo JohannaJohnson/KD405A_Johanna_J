@@ -39,7 +39,7 @@ public class BikeStore {
 	public String getAllBikes() {
 	String s = "";
 		for (Bike b: allBikes){
-			s = s + "is the color" + b.getColor() + "and the size" + b.getSize() + "and the price" + b.getPrice() + "\n";
+			s = s + " is the color " + b.getColor() + " and the size " + b.getSize() + " and the price " + b.getPrice() + "\n";
 		}
 		return s;
 	}

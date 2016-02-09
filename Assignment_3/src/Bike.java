@@ -19,49 +19,15 @@ public class Bike {
 			if (s.toLowerCase().equals(color.toLowerCase())){
 				this.color = color;
 		
-		/**boolean hej = false;
-		for(int i = 0; i < Constants.COLORS.length; i++){
-			if(Constants.COLORS[i].equals(color)){
-			hej = true;
-			*/
+		
 	}
 		
 			
 		}	
 	
-	/**
-			
-	
-	
-	if(hej == true){
-		this.color = color;
+
 	}
 	
-	else{
-		this.color = "false";
-	}
-		
-	
-	*/
-	}
-		/**
-		 boolean correctColor = false;
-		if (size < Constants.MIN_SIZE || size > Constants.MAX_SIZE) {
-		throw new IllegalArgumentException("The size must be between " + Constants.MIN_SIZE + " and " + Constants.MAX_SIZE); 
-		  }
-		  
-		  
-		for (int i = 0; i < Constants.COLORS.length; i ++) {
-		if (Constants.COLORS[i].equalsIgnoreCase(color)){
-		   correctColor = true;
-		}
-		}
-		 if (!correctColor) {
-		throw new IllegalArgumentException("The color must be approved "); 
-		  }
-		}
-		
-		*/
 
 
 /** Constructors, creates bikes with colors, sizes and prices*/

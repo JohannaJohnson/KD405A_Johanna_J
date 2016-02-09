@@ -72,11 +72,7 @@ public class bikeGUI extends JFrame {
 		JButton btnNewButton = new JButton("Add bike");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				/**bikeStore.addBike(textColor.getText(), Integer.parseInt(textSize.getText()), Integer.parseInt(textPrice.getText()));
-				textArea.setText(bikeStore.getAllBikes());
-				textColor.setText(" ");
-				textSize.setText(" ");
-				textPrice.setText(" "); */
+			
 				_setColor();
 				setSize = Integer.parseInt(textSize.getText());
 				setPrice = Integer.parseInt(textPrice.getText());

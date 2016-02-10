@@ -1,11 +1,17 @@
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.util.ArrayList;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JTextArea;
 
-public class humanDogGUI extends JFrame {
+public class animalGUI extends JFrame {
+	
+	
+	public ArrayList<Animal> allAnimals = new ArrayList<Animal>();
+	
 
 	private JPanel contentPane;
 
@@ -16,7 +22,7 @@ public class humanDogGUI extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					humanDogGUI frame = new humanDogGUI();
+					animalGUI frame = new animalGUI();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -28,13 +34,21 @@ public class humanDogGUI extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public humanDogGUI() {
+	public animalGUI() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 450, 300);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JTextArea textArea = new JTextArea();
+		textArea.setBounds(6, 6, 438, 266);
+		contentPane.add(textArea);
+		///
+		Cat c = new Cat("lynxlynx", 3, 9 );
+		allAnimals.add(c);
+	
 	}
 
 }

@@ -107,7 +107,6 @@ public class bikeGUI extends JFrame {
 
 	
 
-
 private void _setColor(){
 for(int i = 0; i < Constants.COLORS.length; i++){
 	if(Constants.COLORS[i].equals(textColor.getText())){

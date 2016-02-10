@@ -1,8 +1,19 @@
 
 public class Dog {
-
-	public Dog() {
-		// TODO Auto-generated constructor stub
+	
+	//Instance fields
+	private String name;
+		
+	
+	//Constructor
+	public Dog (String name){
+		this.name = name;
+		
 	}
-
+	
+	public String getName(){
+		return this.name;
+	}
+	
+	
 }

@@ -1,25 +1,31 @@
 
-public class Snake extends Animal{
-	
+public class Snake extends Animal {
+
 	private boolean poisonus;
-	
-//Constructor
+	private String info;
+
+	// Constructor
 	public Snake(String latinName, boolean poisonus) {
 		super(latinName);
-			this.poisonus = poisonus;
-		
+		this.poisonus = poisonus;
+		// this.setFriendlyName("ormis ");
 	}
 
-	public boolean isPoisonus(){
+	// method that returns poisonus
+	public boolean isPoisonus() {
 		return poisonus;
 
 	}
 
+	// method to print the info about the snakes
 	@Override
 	public String getInfo() {
-		
-		return null;
+		if (poisonus) {
+			info = "poisonus ";
+		} else {
+			info = " not poisonus";
+		}
+		return "A snake has the latin name " + getLatinName() + " and is " + info + "\n";
 	}
 
 }
-

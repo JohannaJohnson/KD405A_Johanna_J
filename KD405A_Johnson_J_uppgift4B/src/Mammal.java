@@ -1,17 +1,16 @@
 
-public abstract class Mammal extends Animal{
-	
+public abstract class Mammal extends Animal {
+
 	private int gestationTime;
-	
-//Constructor
+
+	// Constructor
 	public Mammal(String latinName, int gestationTime) {
 		super(latinName);
-		this.gestationTime = gestationTime; 
-	
-		
+		this.gestationTime = gestationTime;
+
 	}
 
-	public int getGestationTime(){
+	public int getGestationTime() {
 		return gestationTime;
-}
+	}
 }

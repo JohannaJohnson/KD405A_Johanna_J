@@ -8,7 +8,7 @@ public class Snake extends Animal {
 	public Snake(String latinName, boolean poisonus) {
 		super(latinName);
 		this.poisonus = poisonus;
-		// this.setFriendlyName("ormis ");
+		
 	}
 
 	// method that returns poisonus

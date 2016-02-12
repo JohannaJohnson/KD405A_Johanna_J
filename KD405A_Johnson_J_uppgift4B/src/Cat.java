@@ -5,6 +5,7 @@ public class Cat extends Mammal {
 	// Constructor
 	public Cat(String latinName, int gestationTime, int numberOfLifes) {
 		super(latinName, gestationTime);
+		this.numberOfLifes = numberOfLifes;
 
 	}
 
@@ -15,15 +16,14 @@ public class Cat extends Mammal {
 
 	// method to set number of lifes
 	public int setNumberOfLifes(int i) {
-		return numberOfLifes = i;
+		return this.numberOfLifes = i;
 	}
 
 	// method to print the info about the cats
 	@Override
 	public String getInfo() {
 
-		return "A cat has the latin name " + getLatinName() + ", nurses for " + getGestationTime() + " months, and has "
-				+ getNumberOfLifes() + " lifes...";
+		return "A cat has the latin name " + getLatinName() + ", nurses for " + getGestationTime() + " months, and has " + getNumberOfLifes() + " lives...";
 	}
 
 }

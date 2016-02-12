@@ -11,7 +11,7 @@ import javax.swing.JTextArea;
 
 public class animalGUI extends JFrame {
 	//static JTextArea textArea;
-
+	
 	public ArrayList<Animal> allAnimals = new ArrayList<Animal>();
 
 	/**
@@ -37,7 +37,7 @@ public class animalGUI extends JFrame {
 		getContentPane().setLayout(null);
 
 		JTextArea textArea = new JTextArea();
-		textArea.setBounds(6, 41, 438, 191);
+		textArea.setBounds(36, 41, 661, 191);
 		getContentPane().add(textArea);
 
 		// ArrayList of animals
@@ -58,8 +58,8 @@ public class animalGUI extends JFrame {
 		 * for loop that prints all the animals from the arrayList to the text
 		 * area
 		 */
-		for (Animal animal : allAnimals) {
-			textArea.append(animal.getInfo() + "\n");
+		for (int i = 0; i < allAnimals.size(); i++) {
+			textArea.append(allAnimals.get(i).getInfo() + "\n");
 		}
 
 	}

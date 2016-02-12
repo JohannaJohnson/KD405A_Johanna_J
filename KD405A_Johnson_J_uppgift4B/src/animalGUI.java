@@ -10,7 +10,7 @@ import javax.swing.JTextArea;
 
 
 public class animalGUI extends JFrame {
-	static JTextArea textArea;
+	//static JTextArea textArea;
 
 	public ArrayList<Animal> allAnimals = new ArrayList<Animal>();
 

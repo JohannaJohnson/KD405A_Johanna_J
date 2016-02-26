@@ -27,14 +27,14 @@ public class catGarden {
 	public void setName(String name){
 		this.name = name;
 	}
-	
+	/*
 	public String getCats(){
 		String s = this.name+"\n";
 		for(Cat vat : allCats){
 			s = s + cat.getName()+"\n";
 		}
 		return s;
-	}
+	}*/
 
 
 }

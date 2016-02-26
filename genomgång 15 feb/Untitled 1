@@ -1,0 +1,32 @@
+i veckans uppgift ska filerna kunna kommunicera fram och tillbaka. 
+
+ha 2 filer, en med logiken och en med GUI. 
+
+du kan deklarera en klass inuuti en annan kalss. 
+
+ex. private class MyListener implements ActionListener{
+	int i =3;
+}
+
+fördel: du kan hitta det som finns utanför
+		du kan även skapa ett gärnssnitt. 
+		
+VAD ÄR implements? och ActionListener? 
+implements = implementing an interface "genomför" ett interface??
+
+om man skriver något här (så anropar den det som finns i den här);
+
+
+public void moveCat(){
+	Point p  = lable.getLocation();
+	int nextX = p.x + speedX;
+	int nextY = p.y + speedY;
+	lable.setLocation(nextX, nextY());
+	if (nextX > gameArea.getWidth()){
+	speedX = -1;
+	}
+	}
+	
+	
+
+

@@ -1,0 +1,47 @@
+3.
+
+Bicycle b = new Bicycle (10,3);
+b.applyBrake(2);
+
+STOR bokstav på klassnamn!
+
+
+4. 
+
+Den anropar konstruktorn i superklassen Bicycle och ger värde till instansvariablerna startSpeed och startGeer.
+
+
+6. 
+
+private Person owner;
+=
+det KAN finnas en relation
+
+Car(String lic, Person Owner);
+=
+konstruktor kräver ägare.  
+
+
+7.
+7.2
+Person p = c.getOwner();
+System.out.println("Owner" +  p.getName());
+
+7.3
+c.changeOwner(p2);
+
+
+
+
+
+
+\\lecture//
+
+--> deklarera interface
+public interface Movable{
+	public void moveAround();
+}
+	
+	
+
+

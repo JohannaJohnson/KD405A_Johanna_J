@@ -20,7 +20,6 @@ public class Human {
 	public Dog buyDog(Dog dog1){
 		this.dog = dog1;
 		return dog;
-		
 	}
 	
 	public String getInfo(String info){

@@ -11,9 +11,9 @@ public class Dog {
 		
 	}
 	
+	//method
 	public String getName(){
 		return this.name;
 	}
-	
 	
 }
